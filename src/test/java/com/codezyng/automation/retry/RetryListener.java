@@ -15,8 +15,7 @@ public class RetryListener implements IAnnotationTransformer {
             Constructor testConstructor,
             Method testMethod) {
 
-        if (annotation.getRetryAnalyzer() == null) {
-            annotation.setRetryAnalyzer(RetryAnalyzer.class);
-        }
+        // ✅ TestNG 7.11 has NO getter → set directly
+        annotation.setRetryAnalyzer(RetryAnalyzer.class);
     }
 }

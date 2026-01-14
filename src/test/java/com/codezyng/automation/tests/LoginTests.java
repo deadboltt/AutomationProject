@@ -4,6 +4,8 @@ import com.codezyng.automation.base.BaseTest;
 import com.codezyng.automation.pages.LoginPage;
 import com.codezyng.automation.pages.ProductsPage;
 import com.codezyng.automation.dataproviders.LoginDataProvider;
+
+import org.openqa.selenium.TimeoutException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -23,4 +25,7 @@ public class LoginTests extends BaseTest {
             Assert.assertTrue(loginPage.isErrorMessageDisplayed(), "Error message should be displayed for invalid login");
         }
     }
+
+
+
 }

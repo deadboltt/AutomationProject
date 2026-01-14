@@ -69,6 +69,7 @@ public class BaseTest {
                 chromeOptions.addArguments("--disable-save-password-bubble");
 
 
+                // Code to Fix Weak Password PPOP-UP :)
                 Map<String, Object> prefs = new HashMap<>();
                 prefs.put("credentials_enable_service", false);
                 prefs.put("profile.password_manager_enabled", false);
@@ -118,7 +119,7 @@ public class BaseTest {
 
         String testName = result.getMethod().getMethodName();
 
-        // 📸 Capture screenshot ONLY if driver exists
+        // Capture screenshot ONLY if driver exists
         if (DriverManager.getDriver() != null) {
             ScreenshotUtils.captureScreenshot(testName);
         } else {
