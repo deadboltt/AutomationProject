@@ -1,20 +1,3 @@
-Below is a **clean, professional, interview-ready `README.md`** tailored specifically for your repository
-👉 **[https://github.com/deadboltt/CodezyngAutomation.git](https://github.com/deadboltt/CodezyngAutomation.git)**
-
-This README reflects **everything you actually implemented**:
-
-* BaseTest refactor
-* ThreadLocal WebDriver
-* Headless execution
-* Allure + Extent screenshots
-* Retry logic (TestNG 7–compatible)
-* Jenkins readiness
-* Proper Maven structure (`src/test/java` vs `src/main/java`)
-
-You can **replace your existing README.md بالكامل** with this.
-
----
-
 # 🚀 Codezyng Automation Framework
 
 **Selenium | TestNG | Maven | Allure | Extent | Jenkins**
