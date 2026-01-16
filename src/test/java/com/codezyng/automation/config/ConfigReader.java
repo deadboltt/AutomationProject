@@ -16,7 +16,7 @@ public final class ConfigReader {
 
             if (input == null) {
                 throw new RuntimeException(
-                        "❌ config.properties NOT FOUND in src/test/resources"
+                        "config.properties NOT FOUND in src/test/resources"
                 );
             }
 
@@ -24,7 +24,7 @@ public final class ConfigReader {
 
         } catch (Exception e) {
             throw new RuntimeException(
-                    "❌ Failed to load config.properties",
+                    "Failed to load config.properties",
                     e
             );
         }
@@ -36,7 +36,7 @@ public final class ConfigReader {
         String value = properties.getProperty(key);
         if (value == null) {
             throw new RuntimeException(
-                    "❌ Property '" + key + "' not found in config.properties"
+                    "Property '" + key + "' not found in config.properties"
             );
         }
         return value;

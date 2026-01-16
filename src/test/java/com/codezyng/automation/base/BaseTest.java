@@ -108,7 +108,7 @@ public class BaseTest {
 		if (DriverManager.getDriver() != null) {
 			ScreenshotUtils.captureScreenshot(testName);
 		} else {
-			System.out.println("⚠ Skipping screenshot — driver not initialized for: " + testName);
+			System.out.println("Skipping screenshot — driver not initialized for: " + testName);
 		}
 
 		// Quit safely
