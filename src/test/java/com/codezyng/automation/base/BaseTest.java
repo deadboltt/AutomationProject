@@ -57,10 +57,8 @@ public class BaseTest {
 
 			// Code to Fix Weak Password PPOP-UP :)
 			Map<String, Object> prefs = new HashMap<>();
-			prefs.put("credentials_enable_service", false);
 			prefs.put("profile.password_manager_enabled", false);
 			prefs.put("profile.password_manager_leak_detection", false);
-			prefs.put("profile.password_manager_leak_detection_dialog_shown", true);
 
 			chromeOptions.setExperimentalOption("prefs", prefs);
 
